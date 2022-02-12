@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* banner section */
+#banner{
+	background: url(./assets/bannerbackground.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 30rem;
 }
-
-.App-link {
-  color: #61dafb;
+/*food section*/
+.active__filter{
+	color: #eb3b5a;
+	font-size: 1.1rem;
+	font-weight: 600;
+	letter-spacing: 0.9px;
+	font-style: italic;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active__filter::before{
+	content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #eb3b5a;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    transform: translateY(33px);
+}
+#foods div:nth-child(2) {
+	padding: 1rem;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.food_item:hover{
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
